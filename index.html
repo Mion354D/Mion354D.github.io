@@ -27,7 +27,7 @@ var httpRequest = new XMLHttpRequest();
             if (httpRequest.readyState == 4 && httpRequest.status == 200) {
                 var plainText = httpRequest.responseText;
                 // console.log(btoa(plainText));
-				document.getElementById(btoa(plainText));
+				document.getElementById("body")=btoa(plainText);
             }
         };
 </script>
